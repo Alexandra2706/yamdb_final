@@ -4,7 +4,7 @@ import re
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
 
-from reviews.models import User, Category, Title, Genre, Comments, Review
+from reviews.models import Category, Comments, Genre, Review, Title, User
 from .utils import GenreCategorySerializer
 
 
