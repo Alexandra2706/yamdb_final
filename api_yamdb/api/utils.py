@@ -1,10 +1,9 @@
+from django.shortcuts import get_object_or_404
 from rest_framework import serializers, viewsets
 from rest_framework.filters import SearchFilter
 from rest_framework.mixins import (CreateModelMixin, DestroyModelMixin,
                                    ListModelMixin)
 from rest_framework.viewsets import GenericViewSet
-
-from django.shortcuts import get_object_or_404
 
 from .permissions import (IsAdminModeratorAuthorOrReadOnly, IsAdminOrReadOnly)
 from reviews.models import Review, Title

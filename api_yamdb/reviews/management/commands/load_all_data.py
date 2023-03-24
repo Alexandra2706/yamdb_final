@@ -1,8 +1,8 @@
 import csv
 
 from django.core.management import BaseCommand
-from reviews.models import (Category, Comments, Genre, GenreTitle,
-                            Review, Title, User)
+from reviews.models import (Category, Comments, Genre, GenreTitle, Review,
+                            Title, User)
 
 
 def iter_csv(file_path: str):
