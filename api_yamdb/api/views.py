@@ -18,6 +18,7 @@ from .serializers import (CategorySerializer, CommentSerializer,
                           ReviewSerializer, TitleSerializer,
                           TitleSerializerGet, TokenSerializer,
                           UserRegistrationSerializer, UserSerializer)
+
 from .utils import CategoryGenre, ReviewComment
 
 
