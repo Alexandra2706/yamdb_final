@@ -14,11 +14,9 @@ from reviews.models import Category, Genre, Review, Title, User
 
 from .permissions import IsAdminOnly, IsAdminOrReadOnly
 from .serializers import (CategorySerializer, CommentSerializer,
-                          ForUserSerializer, GenreSerializer,
-                          ReviewSerializer, TitleSerializer,
-                          TitleSerializerGet, TokenSerializer,
+                          ForUserSerializer, GenreSerializer, ReviewSerializer,
+                          TitleSerializer, TitleSerializerGet, TokenSerializer,
                           UserRegistrationSerializer, UserSerializer)
-
 from .utils import CategoryGenre, ReviewComment
 
 
