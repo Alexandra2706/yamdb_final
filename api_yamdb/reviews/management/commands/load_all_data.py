@@ -1,8 +1,8 @@
 import csv
 
 from django.core.management import BaseCommand
-from reviews.models import (Category, Comments, Genre,
-                            GenreTitle, Review, Title, User)
+from reviews.models import (Category, Comments, Genre, GenreTitle,
+                            Review, Title, User)
 
 
 def iter_csv(file_path: str):
@@ -38,7 +38,7 @@ class Command(BaseCommand):
         for row in reader:
             title = Title(id=row['id'], name=row['name'],
                           year=int(row['year']),
-                          category=Category.objects.get(pk=row['category']),)
+                          category=Category.objects.get(pk=row['category']), )
             title.save()
 
         reader = iter_csv('static/data/genre_title.csv')
