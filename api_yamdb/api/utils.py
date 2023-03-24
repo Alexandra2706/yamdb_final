@@ -1,5 +1,4 @@
-from rest_framework import serializers
-from rest_framework import viewsets
+from rest_framework import serializers, viewsets
 from rest_framework.filters import SearchFilter
 from rest_framework.mixins import (CreateModelMixin, DestroyModelMixin,
                                    ListModelMixin)
