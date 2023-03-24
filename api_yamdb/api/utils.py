@@ -6,7 +6,7 @@ from rest_framework.mixins import (CreateModelMixin, DestroyModelMixin,
 from rest_framework.viewsets import GenericViewSet
 from reviews.models import Review, Title
 
-from .permissions import (IsAdminModeratorAuthorOrReadOnly, IsAdminOrReadOnly)
+from .permissions import IsAdminModeratorAuthorOrReadOnly, IsAdminOrReadOnly
 
 
 class ReviewComment(viewsets.ModelViewSet):
