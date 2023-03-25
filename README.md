@@ -16,10 +16,50 @@
 git clone git@github.com:Alexandra2706/yamdb_final.git
 ```
 
+В клонированном репозитории создать secrets:
+
+```
+ - DB_ENGINE - django.db.backends.postgresql
+ - DB_HOST - db
+ - DB_NAME - postgres
+ - DB_PORT - 5432
+ - DOCKER_PASSWORD - <ваш_пароль_dockerhub>
+ - DOCKER_USERNAME -<ваш_username_dockerhub> 
+ - HOST - IP-адрес вашего сервера
+ - PASSPHRASE - пароль к ssh-ключу
+ - POSTGRES_PASSWORD - postgres
+ - POSTGRES_USER -postgres
+ - SSH_KEY - ваш ssh-ключ
+ - TELEGRAM_TO - ID вашего телеграм-аккаунта
+ - TELEGRAM_TOKEN - токен вашего бота
+ - USER - имя пользователя для подключения к серверу
+```
+
+Изменить ip-адрес сервера в файле:
+
+```
+/infra/nginx/default.conf
+```
+
 Подключиться к серверу по ssh-ключу:
 
 ```
 ssh your_login@pu.bl.ic.ip
+```
+
+Скопируйте файлы docker-compose.yaml и nginx/default.conf на сервер в home/<ваш_username>/docker-compose.yaml и home/<ваш_username>/nginx/default.conf соответственно
+
+```
+ - docker-compose.yaml в home/<ваш_username>/docker-compose.yaml
+ - nginx/default.conf в home/<ваш_username>/nginx/default.conf
+```
+
+Запушить проект на сервер:
+
+```
+ - git add .
+ - git commit -m "comment"
+ - git push
 ```
 
 Запустить docker-compose:
