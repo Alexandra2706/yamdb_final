@@ -1,4 +1,10 @@
 # yamdb_final
+#### Проект можно посмотреть по адресу:
+#### http://84.201.141.88/admin/login/?next=/admin/
+#### или
+#### http://myproject.hopto.org/admin/login/?next=/admin/
+#### login: addmin
+#### password: addmin
 
 ![example workflow](https://github.com/alexandra2706/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
